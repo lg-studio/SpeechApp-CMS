@@ -1,0 +1,42 @@
+{
+  "name": "Server",
+  "version": "0.0.0",
+  "description": "Server",
+  "main": "App.js",
+  "author": {
+    "name": "CatalinAndrei",
+    "email": ""
+  },
+  "scripts": {
+    "start": "node ./Server/App.js Heroku",
+    "startlive": "live-server --open=./Client/"
+  },
+  "dependencies": {
+    "apn": "^1.7.4",
+    "async": "^1.4.0",
+    "bcrypt-nodejs": "0.0.3",
+    "connect-mongo" : "0.8.2",
+    "emailjs": "^0.3.16",
+    "express": "3.4.4",
+    "express-session": "^1.11.3",
+    "forever-monitor": "^1.7.0",
+    "mongoose": "^4.1.1",
+    "mongodb": "^2.0.36",
+    "multer": "^1.0.1",
+    "node-gcm": "^0.12.0",
+    "oauth": "^0.9.13",
+    "request-json": "^0.5.3",
+    "underscore": "^1.8.3",
+    
+    "live-server": "^0.8.2",
+    
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "~0.10.0",
+    "grunt-contrib-nodeunit": "~0.4.1",
+    "grunt-contrib-uglify": "^0.8.0",
+    "grunt-csssplit": "^0.4.0"    
+  },
+  "engines": {
+    "node": "0.12.2"
+  }
+}

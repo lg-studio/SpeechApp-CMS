@@ -1,0 +1,53 @@
+<div class="sidebar-inner c-overflow">    
+    <div class="profile-menu">
+        <a href="" toggle-submenu>
+            <div class="profile-pic">
+                <img src="img/profile-pics/1.jpg" alt="">
+            </div>
+
+            <div class="profile-info">
+                Now You
+
+                <i class="md md-arrow-drop-down"></i>
+            </div>
+        </a>
+
+        <ul class="main-menu">
+            <li>
+                <a data-ui-sref="user-info" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-person"></i> View Profile</a>
+            </li>
+            <li>
+                <a href=""><i class="md md-history"></i> Logout</a>
+            </li>
+        </ul>
+    </div>
+
+    <ul class="main-menu">
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="home" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-home"></i> Home</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="users" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-account-child"></i> Users</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="certificates" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-subject"></i> Certificates</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="competences" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-my-library-books"></i> Competences</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="topics" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-my-library-books"></i> Topics</a>
+        </li>
+        <li data-ui-sref-active="active">
+            <a data-ui-sref="taskTemplates" data-ng-click="mactrl.sidebarStat($event)"><i class="md md-my-library-books"></i> Task Templates</a>
+        </li>
+        <li class="sub-menu" data-ng-class="{ 'active toggled': mactrl.$state.includes('pages') }">
+            <a href="" toggle-submenu><i class="md md-content-copy"></i> Multiple Choice Options</a>
+            <ul>
+                <li><a data-ui-sref-active="active" data-ui-sref="multipleChoiceText" data-ng-click="mactrl.sidebarStat($event)">Text</a></li>
+                <li><a data-ui-sref-active="active" data-ui-sref="multipleChoiceImage" data-ng-click="mactrl.sidebarStat($event)">Image</a></li>
+            </ul>
+        </li>
+        
+    </ul>
+</div>

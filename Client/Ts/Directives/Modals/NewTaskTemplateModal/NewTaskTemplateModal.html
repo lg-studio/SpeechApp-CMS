@@ -1,0 +1,53 @@
+<!-- Button trigger modal -->
+<ul class="actions">
+	<li>
+		<button class="btn bgm-cyan btn-float" data-toggle="modal" data-target="#myModal"><i class="md md-add"></i></button>
+	</li>
+</ul>
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+<div class="modal-dialog" role="document">
+	<div class="modal-content">
+	<div class="modal-header">
+		<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		<h4 class="modal-title" id="myModalLabel">New task template</h4>
+	</div>
+	<div class="modal-body">
+		<div id="classProperty" class="form-group fg-line">
+			<label>Class</label>
+			<br>
+			<select class="ny-full-width" 
+					ng-model = "configuration.selectedClass"
+					ng-change = "ClassSelected()"
+					ng-options="option for option in configuration.templateClassOptions" />
+		</div>
+		
+		<div id="typeProperty" class="form-group fg-line" ng-show="configuration.templateTypeOptions">
+			<label >Type</label>
+			</br>
+			<select class="ny-full-width"
+					ng-model = "configuration.selectedType"
+					ng-options="option for option in configuration.templateTypeOptions"
+					ng-change = "TypeSelected()" />
+		</div>
+		
+		<div id="structureProperty" class="form-group fg-line" ng-show="configuration.templateStructureOptions">
+			<label>Type</label>
+			</br>
+			<select  class="ny-full-width"
+					ng-model = "configuration.selectedStructure"
+					ng-options = "option for option in configuration.templateStructureOptions"
+					ng-change = "StructureSelected()"
+					>
+			</select>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		<button type="button" class="btn btn-primary" ng-disabled="!canCreate" ng-click="Create()" data-dismiss="modal">Create</button>
+	</div>
+	</div>
+</div>
+</div> 

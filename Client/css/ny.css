@@ -1,0 +1,101 @@
+.f-x-large {
+  font-size: x-large;
+}
+
+select {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+}
+
+.ny-full-width{
+  width: 100%;
+}
+.ny-margin-18{
+  margin: 18px;
+}
+
+.ny-node-card{
+  padding: 18px;
+  width: 452px;    
+}
+
+.ny-node-card-header > span {
+  padding-left: 5px;
+  display: inline-block;
+  width: 150px;
+  background: #4285F4;
+}
+
+.ny-node-card-body {
+  border: 1px solid #4285F4;
+}
+
+.ny-node-item-bubble.ny-small{
+  height: 50px;
+}
+
+.ny-node-item-bubble.ny-small > div{
+  height: 30px;
+}
+
+.ny-node-item-bubble {
+  height: 80px;
+  /*padding: 10px;*/
+  padding: 10px; 
+  background-color: #ecedef;
+}
+
+.ny-node-item-bubble > div{
+  height: 60px;
+  font-size: x-small;
+  color: black;
+  background-color: #ecedef;
+  overflow: hidden;
+  text-overflow: ellipsis;  
+}
+.ny-tile-wrapper{
+  padding: 10px;
+}
+
+.ny-tile{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.ny-tile:hover{
+  /*background-color: #91BBFF;*/
+  background-color: #D4E4FF;
+  
+  /*background-color: #95BAF9;*/
+}
+
+.ny-tile img.ny-picture{
+  width: 80px;
+  height: 80px;
+}
+
+.ny-tile > .row {
+  padding-top: 5px;
+}
+.ny-audio-prompt .md-play-arrow{
+  font-size: -webkit-xxx-large;
+  padding-left: 116px;
+}
+/**/
+
+/* Styles go here */
+.nyWorkspace {
+  padding:18px;
+}
+
+.nyPropertyView {
+    padding-left: 18px;
+    height: 600px;
+    border-left: 1px solid;    
+}
+
+// Metadata
+.certificatesConfigIcon {
+  position: relative;
+  bottom: -20px;
+}

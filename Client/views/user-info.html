@@ -1,0 +1,177 @@
+<header id="header" data-ng-include src="'includes/header.html'" data-ng-controller="headerCtrl as hctrl"></header>
+
+<section id="main">
+    
+    <aside id="sidebar" data-ng-include src="'includes/sidebar-left.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
+
+    <section id="content">
+
+        <div class="container">
+
+            <div class="card" data-ng-controller="userDetailsCtrl as userCtrl">
+                <div class="card-header">
+                    <h2>User Details</h2>
+                </div>
+
+                <form role="form">
+                    <div class="card-body card-padding">
+
+                        <p class="f-500 c-black m-b-20">Profile Image</p>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="line-height: 150px;">
+                                <img ng-src="{{userCtrl.user.list[0].ProfileImageUrl}}">
+                            </div>
+                            <div>
+                                <span class="btn btn-info btn-file">
+                                <span class="fileinput-new">Select image</span>
+                                <span class="fileinput-exists">Change</span>
+                                <input type="file" ng-click="userCtrl.enableSaveButton()" name="...">
+                                </span>
+                                <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput" ng-click="userCtrl.disableSaveButton()">Remove</a>
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" class="form-control input-sm" id="firstName" data-ng-value="userCtrl.user.list[0].FirstName" placeholder="Enter first name"
+                                    disabled/>
+                                </div>
+                            </div>
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" class="form-control input-sm" id="lastName" data-ng-value="userCtrl.user.list[0].LastName" placeholder="Enter last name"
+                                    disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="email">Email</label>
+                                    <input type="text" class="form-control input-sm" id="email" data-ng-value="userCtrl.user.list[0].Email" placeholder="Enter email"
+                                    disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="username">Username</label>
+                                    <input type="text" class="form-control input-sm" id="username" data-ng-value="userCtrl.user.list[0].UserName" placeholder="Enter username"
+                                    disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label for="yearBorn">Year Born</label>
+                                <select id="yearBorn" ng-options="year for year in userCtrl.yearList track by year" ng-model="userCtrl.user.list[0].BornYear"
+                                data-select-picker disabled/>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <label for="gender">Gender</label>
+                                <select id="gender" ng-options="gender for gender in userCtrl.genderList track by gender" ng-model="userCtrl.user.list[0].Gender"
+                                data-select-picker disabled/>
+                            </div>
+                        </div>
+                        <br/>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label for="country">Country</label>
+                                <select id="country" ng-options="country for country in userCtrl.countryList track by country" ng-model="userCtrl.user.list[0].HomeCountry"
+                                data-select-picker disabled/>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <label for="language">Language</label>
+                                <select id="language" ng-options="language for language in userCtrl.languageList track by language" ng-model="userCtrl.user.list[0].NativeLanguage"
+                                data-select-picker disabled/>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="card-header">
+                        <h2>Now You Status</h2>
+                    </div>
+
+                    <div class="card-body card-padding">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="ratingSkills">Rating Skills</label>
+                                    <input type="text" class="form-control input-sm" id="ratingSkills" data-ng-value="userCtrl.user.list[0].RatingSkills" placeholder="Enter rating skills"
+                                    disabled>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label for="type">Account Type</label>
+                                <select id="type" ng-options="type for type in userCtrl.typeList track by type" ng-model="userCtrl.user.list[0].Type" ng-change="userCtrl.enableSaveButton()" data-select-picker/>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <label for="accountStatus">Account Status</label>
+                                <select name="accountStatus" id="accountStatus" ng-model="userCtrl.user.list[0].AccountState" data-select-picker disabled>
+                                    <option ng-repeat="status in userCtrl.statusList" value="{{status.AccountState}}">{{status.AccountLabel}}</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <br/>
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="form-group fg-line">
+                                    <label>Last Seen Date</label>
+                                    <input type="text" class="form-control" data-ng-value="userCtrl.user.list[0].LastSeenDate | date:'dd-MM-yyyy HH:mm'" disabled/>
+                                </div>
+                            </div>
+
+                            <div class="col-xs-6">
+                                <div class="form-group fg-line">
+                                    <label>Registration Date</label>
+                                    <input type="text" class="form-control" data-ng-value="userCtrl.user.list[0].RegistrationDate | date:'dd-MM-yyyy'" disabled/>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <div class="form-group fg-line text-center">
+                                    <button type="submit" data-ng-class="userCtrl.saveButtonEnabled ? 'btn btn-primary waves-effect active' : 'btn btn-primary waves-effect disabled'" data-ng-click="userCtrl.saveUser()">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                        
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+</section>
+
+<footer id="footer" data-ng-include src="'includes/footer.html'"></footer>

@@ -1,0 +1,89 @@
+ <ul class="nav nav-pills" role="tablist">
+    <li class="active" ng-click="TabMetadataSelected()"><a data-toggle="tab">Metadata</a></li>
+    <li><a data-toggle="tab" ng-click="TabStructureSelected()">Structure</a></li>
+</ul>
+<div class="tab-content">
+			<div class="container-fluid ny-margin-18" ng-show="metaDataTabActive">
+				<div class="row">
+					<p class="f-500 c-black m-b-20">Cover</p>
+					<div class="fileinput fileinput-new" data-provides="fileinput">
+						<div class="fileinput-new thumbnail" style="width: 200px; height: 150px;">
+							<img ng-src="img/topicsIcons/interview_logo.png" alt="...">
+						</div>
+						<div class="fileinput-preview fileinput-exists thumbnail" style="max-width: 200px; max-height: 150px;"></div>
+						<div ng-if="!model.Active">
+							<span class="btn btn-info btn-file"><span class="fileinput-new">Select image</span><span class="fileinput-exists">Change</span><input type="file" name="..."></span>
+							<a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput">Remove</a>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-6">
+						<div class="form-group fg-line">
+							<label for="text">Caption</label>
+							<input class="form-control input-sm" id="text" placeholder="Caption" type="text" ng-value="model.Template.Caption" ng-readonly="model.Active">
+						</div>
+					</div>
+					<div class="col-xs-6"></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<div class="form-group fg-line">
+							<label for="competenceSelect">Competence</label>
+							</br>
+							<input class="form-control input-sm"
+									ng-value="model.Competence.Name" type="text" readonly ng-if="model.Active">
+							<select id="competenceSelect" class="ny-full-width" ng-if="!model.Active"
+								ng-model="selectedCompetence" 
+								ng-options = "option.Name for option in availableCompetences">
+							</select>
+									
+							<!--<select id="competenceSelect" class="ny-full-width" ng-if="!model.Active">
+								<option>Speaking</option>
+								<option>Communication</option>
+							</select>-->
+						</div>
+					</div>
+					<div class="col-xs-9"></div>
+				</div>
+				<div class="row">
+					<div class="col-xs-3">
+						<div class="form-group fg-line">
+							<label for="classProperty">Class</label>
+							<input class="form-control input-sm" id="classProperty"
+									ng-value="model.Template.Type" type="text" readonly>
+						</div>
+					</div>
+					<div class="col-xs-3">
+						<div class="form-group fg-line">
+							<label for="typeProperty">Type</label>
+							<input class="form-control input-sm" id="typeProperty" 
+									ng-value="model.Template.Kind" type="text" readonly>
+						</div>
+					</div>
+					<div class="col-xs-6"></div>
+				</div>
+				<ny-certificate-configurator model="model.CertificatesConfiguration"></ny-certificate-configurator>
+				</br>
+				</br>
+				</br>
+				</br>				
+				<div class="row">
+					<div class="col-xs-9"></div>
+					<div class="col-xs-3">
+						<span class="btn btn-primary waves-effect" ng-if="!model.Active">SAVE</span>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="container-fluid" ng-show="structureTabActive">
+			<div class="row">
+				<div class="col-xs-8">
+					<ny-workspace model="model.Template"></ny-workspace>
+				</div>
+				<div class="col-xs-4">
+					<ny-property-view read-only="readOnly"></ny-property-view>
+				</div>
+			</div>
+		</div>
+  </div>	

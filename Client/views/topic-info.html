@@ -1,0 +1,131 @@
+<header id="header" data-ng-include src="'includes/header.html'" data-ng-controller="headerCtrl as hctrl"></header>
+
+<section id="main">
+
+    <aside id="sidebar" data-ng-include src="'includes/sidebar-left.html'" data-ng-class="{ 'toggled': mactrl.sidebarToggle.left === true }"></aside>
+
+    <section id="content" data-ng-controller="topicDetailsCtrl as topicCtrl">
+
+        <div class="container">
+
+            <div class="card">
+                <div class="card-header">
+                    <h2>Topic Details</h2>
+                </div>
+                <form role="form">
+                    <div class="card-body card-padding">
+
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="fg-line form-group">
+                                    <label for="firstName">Name</label>
+                                    <input type="text" class="form-control input-sm" id="firstName" data-ng-value="topicCtrl.topic.list[0].Name" placeholder="Enter topic name"
+                                    disabled/>
+                                </div>
+                            </div>
+                        </div>
+
+                        <p class="f-500 c-black m-b-20">Image</p>
+                        <div class="fileinput fileinput-new" data-provides="fileinput">
+                            <div class="fileinput-preview thumbnail" data-trigger="fileinput" style="line-height: 150px;">
+                                <img ng-src="{{topicCtrl.topic.list[0].IconUrl}}">
+                            </div>
+                            <div>
+                                <span class="btn btn-info btn-file">
+                                <span class="fileinput-new">Select image</span>
+                                <span class="fileinput-exists">Change</span>
+                                <input type="file" name="..." ng-click="topicCtrl.imageAdded=true">
+                                </span>
+                                <a href="#" class="btn btn-danger fileinput-exists" data-dismiss="fileinput" ng-click="topicCtrl.imageAdded=false">Remove</a>
+                            </div>
+                        </div>
+
+                        <br/>
+                        <br/>
+
+                        <div class="card">
+                            <div class="card-header ch-alt m-b-20">
+                                <h2>Associated task templates <small>The table below contains all the task templates associated to this topic.</small></h2>
+                                <button class="btn bgm-cyan btn-float" data-toggle="modal" data-target="#myModalHorizontal" ng-click="topicCtrl.resetTemplateTableSelection()"><i class="md md-add"></i></button>
+                            </div>
+
+                            <div class="card-body">
+                                <div class="listview">
+
+                                    <a class="lv-item" data-ng-repeat="w in topicCtrl.topic.list[0].TaskTemplates">
+                                        <div class="media">
+
+                                            <div class="pull-left">
+                                                <img class="lv-img-sm" data-ng-src="{{ w.IconUrl }}" alt="">
+                                            </div>
+                                            <div class="pull-right">
+                                                <button data-ng-show="w.new" data-ng-click="topicCtrl.removeTopic(w._id)" class="btn bgm-red btn-icon waves-effect"><i class="md md-close"></i></button>
+                                            </div>
+                                            <div class="media-body">
+                                                <div class="lv-title">{{ w.Caption }}</div>
+                                                <small class="lv-small">Template Type: {{ w.Kind }}</small>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-lg-4 col-lg-offset-4">
+                                <div class="form-group fg-line text-center">
+                                    <button type="submit" data-ng-class="topicCtrl.newTemplates.length > 0 || topicCtrl.imageAdded ? 'btn btn-primary waves-effect active' : 'btn btn-primary waves-effect disabled'"
+                                    data-ng-click="userCtrl.saveUser()">Save</button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Modal -->
+            <div class="modal fade" id="myModalHorizontal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-lg">
+                    <div class="modal-content">
+                        <!-- Modal Header -->
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">
+                                <span aria-hidden="true">&times;</span>
+                                <span class="sr-only">Close</span>
+                            </button>
+                            <h4 class="modal-title" id="myModalLabel">Add New Template</h4>
+                        </div>
+
+                        <!-- Modal Body -->
+                        <div class="modal-body">
+                            <div class="table-responsive">
+                                <table id="templates-table" class="table table-striped" data-bootgrid-selection api-url="taskTemplates">
+                                    <thead>
+                                        <tr>
+                                            <th data-column-id="_id" data-identifier="true">ID</th>
+                                            <th data-column-id="Caption">Caption</th>
+                                            <th data-column-id="Type" data-order="desc">Class</th>
+                                            <th data-column-id="Kind" data-order="desc">Type</th>
+                                        </tr>
+                                    </thead>
+                                </table>
+                            </div>
+
+                        </div>
+
+                        <!-- Modal Footer -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary" data-ng-click="topicCtrl.addTemplates()" data-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</section>
+
+<footer id="footer" data-ng-include src="'includes/footer.html'"></footer>

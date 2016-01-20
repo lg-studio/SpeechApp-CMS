@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES5",
+    "module": "commonjs",
+    "sourceMap": false,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "out": "./Client/Compiled/nowyou.js",
+    "noImplicitAny": false,
+    "watch": true
+  },
+  "exclude": [
+        "node_modules",
+        "vendors"
+   ]
+}

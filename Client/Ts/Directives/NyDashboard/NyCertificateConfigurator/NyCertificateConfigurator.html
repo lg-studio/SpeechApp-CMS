@@ -1,0 +1,33 @@
+<div class="row">
+	<div ng-if="configurationModel">
+		<div class="col-xs-3" ng-repeat="component in preConfigureComponents">
+			<label>{{component.labelCaption}}</label>
+			</br>
+			<input class="form-control input-sm ng-pristine ng-valid ng-touched" type="text" readonly ng-value="component.Name">
+		</div>
+		<div class="col-xs-3">
+			<div><label>Done</label></div>
+			<i class="md md-error c-red f-x-large certificatesConfigIcon" ng-show="!stateIcon.enabled"></i>
+			<i class="md md-done c-lightgreen f-x-large certificatesConfigIcon" ng-show="stateIcon.enabled"></i>
+		</div>
+	</div>
+	
+	<div ng-if="!configurationModel">
+		<div class="col-xs-3" ng-repeat="component in selectComponents">
+			<label>{{component.labelCaption}}</label>
+			</br>
+			<input class="form-control input-sm ng-pristine ng-valid ng-touched" type="text" ng-show="!component.enabled" readonly value="No options available">
+			<select class="ny-full-width"
+				ng-model="component.selection" 
+				ng-options = "option.Name for option in component.optionsList"
+				ng-change="component.Changed()"
+				ng-show="component.enabled"></select>
+		</div>
+		<div class="col-xs-3">
+			<div><label>Done</label></div>
+			<i class="md md-error c-red f-x-large certificatesConfigIcon" ng-show="!stateIcon.enabled"></i>
+			<i class="md md-done c-lightgreen f-x-large certificatesConfigIcon" ng-show="stateIcon.enabled"></i>
+		</div>
+	</div>
+</div>			
+

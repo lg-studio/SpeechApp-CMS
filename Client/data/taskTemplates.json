@@ -1,0 +1,3448 @@
+{
+	"list": [
+		{
+			"_id": "55df47af491e454550dc2b54",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 2 - Competence D",
+			"CompetenceId": "55daeb71491e454550dc2b3e",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "552d077f00c97637a01c120b",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 1 - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55df47fc491e454550dc2b55",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 3 - Competence D",
+			"CompetenceId": "55daeb71491e454550dc2b3e",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55df4802491e454550dc2b56",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 4 - Competence E",
+			"CompetenceId": "55daeb8a491e454550dc2b3f",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55df4806491e454550dc2b57",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 5 - Competence E",
+			"CompetenceId": "55daeb8a491e454550dc2b3f",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55df480b491e454550dc2b58",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 6 - Competence G",
+			"CompetenceId": "55daebb5491e454550dc2b41",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55df480e491e454550dc2b59",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game 7 - Competence H",
+			"CompetenceId": "55daebce491e454550dc2b42",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "http://86.123.141.37:1337/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe02f246c236c87605017",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game FCE - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe481246c236c87605018",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview CAE - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "http://86.123.141.37:1337/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe4e7246c236c87605019",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview CPE - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe759246c236c8760501a",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game Toefel - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe76a246c236c8760501b",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game School - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "55fbe793246c236c8760501c",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Interview Game Random - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "Simple",
+			"Kind": "Interview",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Hi there <%PLAYER.NAME%>! Let's make a Software Engineering interview!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 10,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "Tell me about the hardest bug you had to fix?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 11
+							}
+						]
+					}
+				},
+				{
+					"Id": 12,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 13
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 14
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 15
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 16,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 17
+							}
+						],
+						"LinkedNodeId": 10
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		},
+		{
+			"_id": "5602c2fa430dbaed7a5016b8",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Chose Topic - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "MultipleChoiceText",
+			"Kind": "ChooseTopic",
+			"MultipleChoiceOptionsTreeId": "560a8e8fae5c521969709696",
+			"IconUrl": "http://46.4.214.252:8080/topics_logo.png",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": []
+					}
+				},
+				{
+					"Id": 2,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"LinkedNodeId": 9,
+						"Items": [
+							{
+								"Id": 3,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "You will hear <%RATEE.NAME%> talking about her <%MULTIPLECHOICE_TEXT.SELECTED_OPTION_TEXT%>.",
+									"Name": "<%BOT.NAME%>"
+								}
+							},
+							{
+								"Id": 4,
+								"Type": "AudioPrompt",
+								"Properties": {
+									"UserId": 1225,
+									"Delay": 5,
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"HeaderText": "",
+									"Name": "<%RATEE.NAME%>",
+									"AudioUrl": "<%RECORDING.AUDIOURL%>"
+								}
+							},
+							{
+								"Id": 5,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "Can you guess the <%MULTIPLECHOICE_TEXT.SELECTED_OPTION_TEXT%>?",
+									"Name": "<%BOT.NAME%>"
+								}
+							},
+							{
+								"Id": 7,
+								"Type": "MultipleChoiceTextInput",
+								"Properties": {
+									"SuccessMessage": "Good job! How do you think <%RATEE.NAME%> did?",
+									"InsuccessMessage": "Bad answer.. How do you think <%RATEE.NAME%> did?",
+									"Options": [
+										{
+											"Id": 1,
+											"Text": "Tennis",
+											"Value": 0
+										},
+										{
+											"Id": 2,
+											"Text": "Softball",
+											"Value": 0
+										},
+										{
+											"Id": 3,
+											"Text": "Football",
+											"Value": 1
+										},
+										{
+											"Id": 4,
+											"Text": "Hiking",
+											"Value": 0
+										}
+									]
+								}
+							},
+							{
+								"Type": "RatingInput",
+								"Id": 8,
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Id": 10,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "Please describe your <%MULTIPLECHOICE_TEXT.SELECTED_OPTION_TEXT%> <%MULTIPLECHOICE_TEXT.SELECTED_SUBOPTION_TEXT%>",
+									"Name": "<%BOT.NAME%>"
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 11,
+					"Type": "Input",
+					"Properties": {
+						"LinkedNodeId": 9,
+						"Items": [
+							{
+								"Id": 12,
+								"Type": "RecordingInput",
+								"Properties": {
+									"MinLength": 1,
+									"MaxLength": 30,
+									"MaxRecordings": 2,
+									"MaxRetriesPerRecording": 2
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 13,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Id": 14,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 0,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "Thank you for your answers!",
+									"Name": "<%BOT.NAME%>"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_id": "5616a0bbae5c521969709698",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Chose Topic - Competence C",
+			"CompetenceId": "55daeb5d491e454550dc2b3d",
+			"Type": "MultipleChoiceImage",
+			"Kind": "ReverseDraw",
+			"MultipleChoiceOptionsTreeId": "56169ba7ae5c521969709697",
+			"IconUrl": "http://46.4.214.252:8080/reverse_draw_logo.png",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": []
+					}
+				},
+				{
+					"Id": 2,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"LinkedNodeId": 9,
+						"Items": [
+							{
+								"Id": 3,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "You will hear <%RATEE.NAME%> talking about an image.",
+									"Name": "<%BOT.NAME%>"
+								}
+							},
+							{
+								"Id": 4,
+								"Type": "AudioPrompt",
+								"Properties": {
+									"UserId": 1225,
+									"Delay": 5,
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"HeaderText": "",
+									"Name": "<%RATEE.NAME%>",
+									"AudioUrl": "<%RECORDING.AUDIOURL%>"
+								}
+							},
+							{
+								"Id": 5,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "Can you guess the image?",
+									"Name": "<%BOT.NAME%>"
+								}
+							},
+							{
+								"Id": 7,
+								"Type": "MultipleChoiceImageInput",
+								"Properties": {
+									"SuccessMessage": "Good job! How do you think <%RATEE.NAME%> did?",
+									"InsuccessMessage": "Bad answer.. How do you think <%RATEE.NAME%> did?"
+								}
+							},
+							{
+								"Type": "RatingInput",
+								"Id": 8,
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Id": 10,
+								"Type": "ImagePrompt",
+								"Properties": {
+									"Delay": 2,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"HeaderText": "Please describe this image in your own words",
+									"ImageUrl": "<%MULTIPLECHOICE_IMAGE.SELECTED_OPTION_IMAGEURL%>",
+									"Name": "<%BOT.NAME%>"
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 11,
+					"Type": "Input",
+					"Properties": {
+						"LinkedNodeId": 9,
+						"Items": [
+							{
+								"Id": 12,
+								"Type": "RecordingInput",
+								"Properties": {
+									"MinLength": 1,
+									"MaxLength": 30,
+									"MaxRecordings": 2,
+									"MaxRetriesPerRecording": 2
+								}
+							}
+						]
+					}
+				},
+				{
+					"Id": 13,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Id": 14,
+								"Type": "TextPrompt",
+								"Properties": {
+									"UserId": 1222,
+									"Delay": 0,
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Text": "Thank you for your answers!",
+									"Name": "<%BOT.NAME%>"
+								}
+							}
+						]
+					}
+				}
+			]
+		},
+		{
+			"_id": "561e4bb7ae5c5219697096a6",
+			"CreatedById": "55b84908f6493af8cbfb68c3",
+			"Caption": "Opinion Game 1 - Competence D",
+			"CompetenceId": "55daeb71491e454550dc2b3e",
+			"Type": "Simple",
+			"Kind": "Opinion",
+			"Nodes": [
+				{
+					"Id": 1,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"TextHeader": "Hi there <%PLAYER.NAME%>! Read the short passage below",
+									"TextContent": "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est, qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur?",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 2
+								},
+								"Type": "TextAreaPrompt",
+								"Id": 2
+							}
+						]
+					}
+				},
+				{
+					"Id": 3,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%HOST.ORIGIN%>/Resource/55cb2047e2758cb407bc0aa0",
+									"Name": "<%BOT.NAME%>",
+									"HeaderText": "First let's find out something about you.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "AudioPrompt",
+								"Id": 4
+							}
+						]
+					}
+				},
+				{
+					"Id": 5,
+					"Type": "ContextualOutput",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"AudioUrl": "<%RECORDING.AUDIOURL%>",
+									"Name": "<%RATEE.NAME%>",
+									"HeaderText": "This is the response received from <%RATEE.NAME%>",
+									"PictureUrl": "<%RATEE.PICTUREURL%>",
+									"Delay": 1
+								},
+								"Type": "AudioPrompt",
+								"Id": 6
+							},
+							{
+								"Properties": {
+									"Metrics": [
+										{
+											"Properties": {
+												"Category": "Complexity",
+												"Text": "How well did <%RATEE.NAME%> speak?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 1
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?"
+											},
+											"Type": "Thumbs",
+											"Id": 2
+										},
+										{
+											"Properties": {
+												"Category": "Fluency",
+												"Text": "Do you like how does <%RATEE.NAME%> knows the domain?",
+												"Labels": [
+													"Very Bad",
+													"Bad",
+													"Bad/Good",
+													"Good",
+													"Very Good"
+												]
+											},
+											"Type": "Slider",
+											"Id": 3
+										}
+									],
+									"UserName": "<%RATEE.NAME%>"
+								},
+								"Type": "RatingInput",
+								"Id": 7
+							},
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your feedback. Now it's time for your answer!",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 8
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 9,
+					"Type": "Input",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"MaxRetriesPerRecording": 2,
+									"MaxRecordings": 4,
+									"MaxLength": 30,
+									"MinLength": 1
+								},
+								"Type": "RecordingInput",
+								"Id": 10
+							}
+						],
+						"LinkedNodeId": 3
+					}
+				},
+				{
+					"Id": 19,
+					"Type": "Output",
+					"Properties": {
+						"Items": [
+							{
+								"Properties": {
+									"Name": "<%BOT.NAME%>",
+									"Text": "Thank you for your answers.",
+									"PictureUrl": "<%BOT.PICTUREURL%>",
+									"Delay": 0
+								},
+								"Type": "TextPrompt",
+								"Id": 20
+							}
+						]
+					}
+				}
+			],
+			"IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+		}
+	]
+}

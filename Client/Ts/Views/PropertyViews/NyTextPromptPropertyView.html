@@ -1,0 +1,16 @@
+<div>
+	<div class="form-group fg-line">
+		<i class="md-mode-edit" ng-show="!readOnly"></i><small> {{nodeItem.Type}}</small>
+    </div>
+	<div class="form-group fg-line">
+		<label for="text">Text</label>
+		<input class="form-control input-sm" id="text" placeholder="Text" type="text"
+		ng-model="properties.Text" ng-readonly="readOnly">
+    </div>
+	<div class="form-group fg-line">
+		<label for="delay">Delay</label>
+		<input class="form-control input-sm" id="delay" placeholder="Delay" type="text"
+		ng-model="properties.Delay" ng-readonly="readOnly">
+    </div>
+	<button class="btn btn-primary btn-sm " ng-click="Save()" ng-show="!readOnly">Save</button>	
+</div>

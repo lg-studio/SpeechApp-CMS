@@ -1,0 +1,48 @@
+{
+    "list": [
+        {
+            "_id": "55b7ed03f6493af8cbfb68bf",
+            "UserName": "ionut.paraschiv",
+            "Password": "$2a$10$Oi.wm7K5f8xWdFJQRAMQquEH01OMB/P.sHwadokUKpbWUU89L5gl.",
+            "Type": "Regular",
+            "RatingSkills": 2.45,
+            "Email": "a",
+            "ProfileImageUrl": "img/icons/profile_demo.png",
+            "FirstName": "UserA",
+            "LastName": "Regular UserA",
+            "LastSeenDate": 1438004284428,
+            "BornYear": 1989,
+            "Gender": "Female",
+            "HomeCountry": "French Polynesia",
+            "NativeLanguage": "Maltese",
+            "RegistrationDate": 1438004274428,
+            "AccountState": 1,
+            "PushNotification": {
+                "MobileNotificationKey": "144558b1a7233986c22085d5f1720c5952973df6769e52290ca9da69b7262c77",
+                "MobileType": "iOS"
+            }
+        },
+        {
+            "_id": "55b7ed49f6493af8cbfb68c0",
+            "UserName": "dobre.catalin",
+            "Password": "$2a$04$p/BJa8xdvYe21RTL5/MNHeLBoY1/uJkye0XdsC0FIQ7YTbY/QFEP6",
+            "Type": "Regular",
+            "RatingSkills": 4,
+            "Email": "b",
+            "ProfileImageUrl": "img/icons/profile_demo.png",
+            "FirstName": "Regular UserB",
+            "LastName": "Regular UserB",
+            "LastSeenDate": "1438004284428",
+            "BornYear": 1988,
+            "Gender": "Female",
+            "HomeCountry": "Romania",
+            "NativeLanguage": "Romanian",
+            "RegistrationDate": "1438004274428",
+            "AccountState": 2,
+            "PushNotification": {
+                "MobileNotificationKey": "144558b1a7233986c22085d5f1720c5952973df6769e52290ca9da69b7262c77",
+                "MobileType": "iOS"
+            }
+        }
+    ]
+}

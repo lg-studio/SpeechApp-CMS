@@ -1,0 +1,56 @@
+{
+    "list": [
+        {
+            "_id": "55b7ed03f6493af8cbfb68bf",
+            "Name": "Interview",
+            "IconUrl": "img/topics-interview.png",
+            "TaskTemplates": [
+                {
+                    "_id": "5616a0bbae5c521969709698",
+                    "CreatedById": "55b84908f6493af8cbfb68c3",
+                    "Caption": "Chose Topic - Competence C",
+                    "CompetenceId": "55daeb5d491e454550dc2b3d",
+                    "Type": "MultipleChoiceImage",
+                    "Kind": "ReverseDraw",
+                    "MultipleChoiceOptionsTreeId": "56169ba7ae5c521969709697",
+                    "IconUrl": "http://46.4.214.252:8080/reverse_draw_logo.png"
+                },
+                {
+                    "_id": "55fbe793246c236c8760501c",
+                    "CreatedById": "55b84908f6493af8cbfb68c3",
+                    "Caption": "Interview Game 11 Random - Competence C",
+                    "CompetenceId": "55daeb5d491e454550dc2b3d",
+                    "Type": "Simple",
+                    "Kind": "Interview",
+                    "IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+                }
+            ]
+        },
+        {
+            "_id": "55b7ed49f6493af8cbfb68c0",
+            "Name": "Opinion",
+            "IconUrl": "img/topics-interview.png",
+            "TaskTemplates": [
+                {
+                    "_id": "5616a0bbae5c521969709698",
+                    "CreatedById": "55b84908f6493af8cbfb68c3",
+                    "Caption": "Chose Topic - Competence C",
+                    "CompetenceId": "55daeb5d491e454550dc2b3d",
+                    "Type": "MultipleChoiceImage",
+                    "Kind": "ReverseDraw",
+                    "MultipleChoiceOptionsTreeId": "56169ba7ae5c521969709697",
+                    "IconUrl": "http://46.4.214.252:8080/reverse_draw_logo.png"
+                },
+                {
+                    "_id": "55fbe793246c236c8760501c",
+                    "CreatedById": "55b84908f6493af8cbfb68c3",
+                    "Caption": "Interview Game 11 Random - Competence C",
+                    "CompetenceId": "55daeb5d491e454550dc2b3d",
+                    "Type": "Simple",
+                    "Kind": "Interview",
+                    "IconUrl": "http://46.4.214.252:8080/interview_logo.png"
+                }
+            ]
+        }
+    ]
+}
